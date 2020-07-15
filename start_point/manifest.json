@@ -1,6 +1,6 @@
 {
   "display_name": "Python, assert",
-  "image_name": "cyberdojofoundation/python_assert:5ad5208",
+  "image_name": "cyberdojofoundation/python_assert:76f341e",
   "visible_filenames": [
     "test_hiker.py",
     "hiker.py",
