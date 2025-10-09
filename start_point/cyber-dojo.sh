@@ -38,7 +38,7 @@ coverage3 report \
 echo
 pycodestyle ${CYBER_DOJO_SANDBOX} \
   --show-source `# show source code for each error` \
-  --show-pep8   `# show relevent text from pep8` \
+  --show-pep8   `# show relevant text from pep8` \
   --ignore E302,E305,W293 \
   --max-line-length=80 \
   > ${REPORT_DIR}/style.txt
