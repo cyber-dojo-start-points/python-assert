@@ -12,32 +12,36 @@ function cyber_dojo_enter()
 function cyber_dojo_exit()
 {
   # 2. Remove text files we don't want returned.
-  cyber_dojo_delete_dirs .pytest_cache # ...
+  cyber_dojo_delete_dirs .pytest_cache
+  cyber_dojo_delete_dirs .mypy_cache
   #cyber_dojo_delete_files ...
 }
 cyber_dojo_enter
 trap cyber_dojo_exit EXIT SIGTERM
 # --------------------------------------------------------------
 
+echo MyPy
+mypy *.py | tee ${REPORT_DIR}/mypy.txt || true
+
+echo
 coverage3 run \
   --source=${CYBER_DOJO_SANDBOX} \
     *test*.py
 
-# https://coverage.readthedocs.io/en/v4.5.x/index.html
-
+# https://coverage.readthedocs.io
+echo
 coverage3 report \
   --show-missing \
-    > ${REPORT_DIR}/coverage.txt
+  | tee ${REPORT_DIR}/coverage.txt
 
 # http://pycodestyle.pycqa.org/en/latest/intro.html#configuration
-
-pycodestyle \
-  ${CYBER_DOJO_SANDBOX} \
-    --show-source `# show source code for each error` \
-    --show-pep8   `# show relevent text from pep8` \
-    --ignore E302,E305,W293 \
-    --max-line-length=80 \
-      > ${REPORT_DIR}/style.txt
+echo
+pycodestyle ${CYBER_DOJO_SANDBOX} \
+  --show-source `# show source code for each error` \
+  --show-pep8   `# show relevent text from pep8` \
+  --ignore E302,E305,W293 \
+  --max-line-length=80 \
+  > ${REPORT_DIR}/style.txt
 
 # E302 expected 2 blank lines, found 0
 # E305 expected 2 blank lines after end of function or class

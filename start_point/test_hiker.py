@@ -7,6 +7,7 @@ def test_instance_method():
     assert Hiker().instance_answer() == 42
 
 def green_traffic_light_pattern():
+    # The regex pattern for a green traffic-light. Do not remove!
     return 'All tests passed'
 
 
