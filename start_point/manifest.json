@@ -1,11 +1,12 @@
 {
   "display_name": "Python 3.14.3, assert",
-  "image_name": "ghcr.io/cyber-dojo-languages/python_assert:80f0f37",
+  "image_name": "ghcr.io/cyber-dojo-languages/python_assert:822940c",
   "visible_filenames": [
     "test_hiker.py",
     "hiker.py",
     "cyber-dojo.sh"
   ],
+  "rag_lambda": "red_amber_green.rb",
   "filename_extension": [
     ".py"
   ],
