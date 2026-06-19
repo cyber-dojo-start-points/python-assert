@@ -1,5 +1,13 @@
 {
   "display_name": "Python 3.14.3, assert",
+  "language": [
+    "Python",
+    "3.14.3"
+  ],
+  "test_framework": [
+    "assert",
+    ""
+  ],
   "image_name": "ghcr.io/cyber-dojo-languages/python_assert:822940c",
   "visible_filenames": [
     "test_hiker.py",
