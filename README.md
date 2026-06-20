@@ -1,4 +1,4 @@
-[![Github Action (main)](https://github.com/cyber-dojo-start-points/python-assert/actions/workflows/main.yml/badge.svg)](https://github.com/cyber-dojo-start-points/python-assert/actions)
+[![GitHub CI](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 
 
 ### display_name="Python 3.14.3, assert"
