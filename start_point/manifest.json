@@ -8,7 +8,7 @@
     "assert",
     ""
   ],
-  "image_name": "ghcr.io/cyber-dojo-languages/python_assert:822940c",
+  "image_name": "ghcr.io/cyber-dojo-languages/python_assert:5f0d0cd",
   "visible_filenames": [
     "test_hiker.py",
     "hiker.py",
