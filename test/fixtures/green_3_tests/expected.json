@@ -1,0 +1,10 @@
+{
+  "max_output_lines": 20,
+  "match_counts": {
+    "^All tests passed$": 1,
+    "^hiker\\.py +[0-9]+ +0 +100%$": 1,
+    "^test_hiker\\.py +14 +0 +100%$": 1,
+    "^TOTAL +[0-9]+ +0 +100%$": 1,
+    "AssertionError": 0
+  }
+}

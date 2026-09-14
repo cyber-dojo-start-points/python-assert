@@ -1,0 +1,9 @@
+{
+  "max_output_lines": 20,
+  "match_counts": {
+    "^Success: no issues found in 3 source files$": 1,
+    "^All tests passed$": 1,
+    "^test_size ran$": 1,
+    "AssertionError": 0
+  }
+}

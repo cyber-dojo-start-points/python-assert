@@ -1,0 +1,8 @@
+{
+  "match_counts": {
+    "^test_answer_size\\.py:[0-9]+: error: ": 1,
+    "^Couldn't run .*test_answer_size\\.py.* SyntaxError: ": 1,
+    "AssertionError": 0,
+    "^All tests passed$": 0
+  }
+}

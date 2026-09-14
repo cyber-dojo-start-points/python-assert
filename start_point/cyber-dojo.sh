@@ -29,15 +29,27 @@ export MYPY_CACHE_DIR=/mypy-cache
 # on every line, which is a good deal cheaper. The numbers it reports are the
 # same either way.
 export COVERAGE_CORE=sysmon
+
+# Python puts a script's own directory first on the import path, so a test in
+# a sub-directory would look for its source file beside itself. Naming the
+# sandbox is what lets such a test import a source file in the root.
+export PYTHONPATH=${CYBER_DOJO_SANDBOX}
 # --------------------------------------------------------------
 
 echo MyPy
 mypy *.py | tee ${REPORT_DIR}/mypy.txt || true
 
+# Each test file is run in turn, so a second test file is not silently left
+# out. [coverage run] takes one script and treats any later name as an
+# argument to it, so naming them all on one line would run only the first.
+# --append is what gathers the separate runs into a single report below.
 echo
-coverage run \
-  --source=${CYBER_DOJO_SANDBOX} \
-    *test*.py
+for test_file in $(find . -name '*test*.py' | sort); do
+  coverage run \
+    --append \
+    --source=${CYBER_DOJO_SANDBOX} \
+      "${test_file}"
+done
 
 # https://coverage.readthedocs.io
 echo

@@ -1,0 +1,8 @@
+{
+  "match_counts": {
+    "^Success: no issues found in 2 source files$": 1,
+    "^NameError: name 'ansewr' is not defined": 1,
+    "AssertionError": 0,
+    "^All tests passed$": 0
+  }
+}

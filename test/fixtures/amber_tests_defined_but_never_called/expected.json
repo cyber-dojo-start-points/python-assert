@@ -1,0 +1,8 @@
+{
+  "match_counts": {
+    "^hiker\\.py +[0-9]+ +1 +50%": 1,
+    "^test_hiker\\.py +[0-9]+ +2 +60%": 1,
+    "AssertionError": 0,
+    "^All tests passed$": 0
+  }
+}

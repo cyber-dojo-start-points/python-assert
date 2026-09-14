@@ -1,0 +1,8 @@
+{
+  "matches": [ "hiker_tests\\.py" ],
+  "match_counts": {
+    "^AssertionError$": 1,
+    "test_hiker\\.py": 0,
+    "^All tests passed$": 0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "max_output_lines": 20,
+  "match_counts": {
+    "^checksum\\.py:[0-9]+: error: ": 1,
+    "^All tests passed$": 1,
+    "^Couldn't parse .*checksum\\.py.* as Python source": 1,
+    "^TOTAL ": 0,
+    "AssertionError": 0
+  }
+}

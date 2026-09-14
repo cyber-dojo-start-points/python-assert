@@ -1,0 +1,10 @@
+{
+  "max_output_lines": 20,
+  "match_counts": {
+    "^Success: no issues found in 3 source files$": 1,
+    "^All tests passed$": 1,
+    "^checksum\\.py +[0-9]+ +0 +100%$": 1,
+    "^TOTAL +[0-9]+ +0 +100%$": 1,
+    "AssertionError": 0
+  }
+}

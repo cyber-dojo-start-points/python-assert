@@ -1,0 +1,9 @@
+{
+  "max_output_lines": 20,
+  "match_counts": {
+    "^answer was called$": 1,
+    "^All tests passed$": 1,
+    "^TOTAL +[0-9]+ +0 +100%$": 1,
+    "AssertionError": 0
+  }
+}

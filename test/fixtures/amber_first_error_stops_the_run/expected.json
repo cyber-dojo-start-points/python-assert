@@ -1,0 +1,8 @@
+{
+  "match_counts": {
+    "^ZeroDivisionError: division by zero$": 1,
+    "test_the_answer_is_two_digits_long": 0,
+    "AssertionError": 0,
+    "^All tests passed$": 0
+  }
+}
