@@ -1,14 +1,14 @@
 {
-  "display_name": "Python 3.15.0, assert",
+  "display_name": "Python 3.15.1, assert",
   "language": [
     "Python",
-    "3.15.0"
+    "3.15.1"
   ],
   "test_framework": [
     "assert",
     ""
   ],
-  "image_name": "ghcr.io/cyber-dojo-languages/python_assert:6b9d9ff@sha256:54981605983a03f1e22ac50f839cef55b313481523cc5ad421e373d81a55054d",
+  "image_name": "ghcr.io/cyber-dojo-languages/python_assert:dc06e53@sha256:49139abe1860cba142d406a8fab769a5c73ee83514781a1f2f7a776587f1bfee",
   "visible_filenames": [
     "test_hiker.py",
     "hiker.py",
